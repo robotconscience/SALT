@@ -1,0 +1,3 @@
+[submodule "project_code/openFrameworks/addons/ofxCamaraLucida"]
+	path = project_code/openFrameworks/addons/ofxCamaraLucida
+	url = https://github.com/robotconscience/ofxCamaraLucida.git
