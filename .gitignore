@@ -1,1 +1,5 @@
 .DS_Store
+*.app
+DerivedData
+project_code/*/*/*/bin/data/openni
+*.mov

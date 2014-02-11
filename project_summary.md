@@ -1,33 +1,37 @@
-# Project Title
-Insert the name of your project
+# SALT
+(tentative Title)
 
 ## Authors
-- Insert main author name, surname, github account
-- Insert other author(s) name, surname, github account (one per list element)
+- [Brett Renfer](http://www.robotconscience.com): @robotconscience
+- [Shobun Baile](http://shobunbaile.com/)
 
 ## Description
-Insert a description containing about 100 to 150 words, including your motivation and the meaning behind your idea and execution. The Judges will be keen to know how your idea pushes the boundaries of code and technology. 
+SALT is a physical, digital, and sonic sculpture that is gradually destroyed by direct and indirect human interaction, with the goal of making global-scale ecological concerns compelling and accessible to a wide audience. 
+
+The sculpture is centered around a single salt-based sculpture that slowly dissolves at a rate controlled by the physical presence of visitors at the installation, as well as virtual influences coming from a range of data harvested from online activity.
+
+Live programatic visuals will be directly mapped onto the salt object as it dissolves and will be accompanied by multi-channel audio output. The visual and audio elements will degrade as a direct result of the salt dissolving, creating a visceral connection between the physical and the digital.
+
+## Project Proposal
+<iframe src="http://www.slideshare.net/slideshow/embed_code/31085739" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
 ## Link to Prototype
-NOTE: If your project lives online you can add one or more links here. Make sure you have a stable version of your project running before linking it.
 
-[Example Link](http://www.google.com "Example Link")
+[System Prototype 1](https://vimeo.com/78356704)
 
 ## Example Code
-NOTE: Wrap your code blocks or any code citation by using ``` like the example below.
-```
-function test() {
-  console.log("Printing a test");
-}
-```
-## Links to External Libraries
- NOTE: You can also use this space to link to external libraries or Github repositories you used on your project.
+Coming soon!
 
-[Example Link](http://www.google.com "Example Link")
+## Links to External Libraries
+
+[openFrameworks](https://github.com/openframeworks/openFrameworks "openFrameworks")
+[ofxCv](https://github.com/kylemcdonald/ofxCv "ofxCv")
+[ofxNI2](https://github.com/satoruhiga/ofxNI2 "ofxNI2")
+[ofxCamaraLucida](https://github.com/chparsons/ofxCamaraLucida)
+
 
 ## Images & Videos
-NOTE: For additional images you can either use a relative link to an image on this repo or an absolute link to an externally hosted image.
 
-![Example Image](project_images/cover.jpg?raw=true "Example Image")
+![SALT](http://farm4.staticflickr.com/3703/9571458893_666d613ec1_b.jpg "Salt Image 1")
 
-https://www.youtube.com/watch?v=30yGOxJJ2PQ
+https://vimeo.com/78356704

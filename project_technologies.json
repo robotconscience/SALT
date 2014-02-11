@@ -1,16 +1,25 @@
 {
     "technologies": {
         "apis": [
-            "insert apis"
+            "g+",
+            "twitter",
+            "youtube",
+            "analytics"
         ],
         "platforms": [
-            "insert platforms"
+            "mac"
         ],
         "toolkits": [
-            "insert toolkits"
+            "openFrameworks",
+            "openCv",
+            "openNI",
+            "nodeJS"
         ]
     },
     "themes": [
-        "insert themes"
+        "Audience Interaction",
+        "Destruction",
+        "Hyperobjects",
+        "Climate Change"
     ]
 }
