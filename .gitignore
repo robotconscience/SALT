@@ -2,6 +2,10 @@
 *.app
 DerivedData
 project_code/*/*/*/*/bin/data/openni
+project_code/*/*/bin/data/openni
 *.mov
+
 xcuserdata
-*.brenfer.xcuserdatad
+*.xcuserdatad
+*.pbxuser
+*.mode1v3

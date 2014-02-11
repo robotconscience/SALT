@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EE19307A-182E-4ED3-BBDC-E34CEC566161</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ProjectionFilm</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2CEBFB33-9994-47A0-AEF1-C8C093EE3AA3</key>
+		<string>https://bitbucket.org/robotconscience/shobrett.git</string>
+		<key>82828D60-7742-408E-BCA6-C1EE93003B33</key>
+		<string>https://github.com/chparsons/ofxCamaraLucida.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Flow/ProjectionFilm/ProjectionFilm.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2CEBFB33-9994-47A0-AEF1-C8C093EE3AA3</key>
+		<string>../../../..</string>
+		<key>82828D60-7742-408E-BCA6-C1EE93003B33</key>
+		<string>../../../../../addons/ofxCamaraLucida</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/robotconscience/shobrett.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2CEBFB33-9994-47A0-AEF1-C8C093EE3AA3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>82828D60-7742-408E-BCA6-C1EE93003B33</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxCamaraLucida</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2CEBFB33-9994-47A0-AEF1-C8C093EE3AA3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SelfDestruct</string>
+		</dict>
+	</array>
+</dict>
+</plist>
