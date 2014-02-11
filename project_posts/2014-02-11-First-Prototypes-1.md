@@ -1,3 +1,5 @@
+#History, Part I
+
 We figured we'd start the project with a quick survey of where we're at. 
 
 In the repo right now is all of the code we used to create our first prototype, results of which you can see [here](https://vimeo.com/78356704). 

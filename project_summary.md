@@ -31,7 +31,7 @@ Coming soon!
 * [ofxNI2](https://github.com/satoruhiga/ofxNI2 "ofxNI2")
 * [ofxCamaraLucida](https://github.com/chparsons/ofxCamaraLucida)
 * Prototypes will most likely use [KinectProjectorToolkit](https://github.com/genekogan/KinectProjectorToolkit)
-* 
+* [RGBDemo](https://github.com/rgbdemo/rgbdemo)
 
 
 ## Images & Videos
