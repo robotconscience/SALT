@@ -33,4 +33,4 @@ void main (void) {
 
 What this does is allow me to pass in a 'draw' texture (video content produced by Shobun) and a mask texture (depth image from openNI). Anywhere the openNI2 image is black, we set the alpha of our draw texture to 0. So, what is sent out by the projector is only data that the Kinect/depth camera sees. The next step to make this work for our scale is to change the near/far range of our depth image. This adjusts how values from the depth camera are mapped to a grayscale image. By mapping a narrower range, we get a more accurate depth map, and can differentiate between much finder details.
 
-It ended up looking like this, which we were really happy with: ![Prototype](http://www.flickr.com/photos/robotconscience/12460979684/in/set-72157640835519934)
+It ended up looking like this, which we were really happy with: [Prototype](http://www.flickr.com/photos/robotconscience/12460979684/in/set-72157640835519934)
