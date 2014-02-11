@@ -13,7 +13,9 @@ The sculpture is centered around a single salt-based sculpture that slowly disso
 Live programatic visuals will be directly mapped onto the salt object as it dissolves and will be accompanied by multi-channel audio output. The visual and audio elements will degrade as a direct result of the salt dissolving, creating a visceral connection between the physical and the digital.
 
 ## Project Proposal
-<iframe src="http://www.slideshare.net/slideshow/embed_code/31085739" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+Please view our full project proposal at [Slideshare](http://www.slideshare.net/slideshow/embed_code/31085739)
+* (We promise to add this data into the readme soon!)
 
 ## Link to Prototype
 
@@ -24,10 +26,12 @@ Coming soon!
 
 ## Links to External Libraries
 
-[openFrameworks](https://github.com/openframeworks/openFrameworks "openFrameworks")
-[ofxCv](https://github.com/kylemcdonald/ofxCv "ofxCv")
-[ofxNI2](https://github.com/satoruhiga/ofxNI2 "ofxNI2")
-[ofxCamaraLucida](https://github.com/chparsons/ofxCamaraLucida)
+* [openFrameworks](https://github.com/openframeworks/openFrameworks "openFrameworks")
+* [ofxCv](https://github.com/kylemcdonald/ofxCv "ofxCv")
+* [ofxNI2](https://github.com/satoruhiga/ofxNI2 "ofxNI2")
+* [ofxCamaraLucida](https://github.com/chparsons/ofxCamaraLucida)
+* Prototypes will most likely use [KinectProjectorToolkit](https://github.com/genekogan/KinectProjectorToolkit)
+* 
 
 
 ## Images & Videos
