@@ -18,7 +18,7 @@ Please view our full project proposal at [Slideshare](http://www.slideshare.net/
 * (We promise to add this data into the readme soon!)
 
 ### Salt Sculptures
-	The sculptural elements of the salt installation are built using basic non-iodized table salt and small amounts of soy wax. The salt is ground into a fine powder, and then heated with water and a small amount of soy wax, forming a paste. The paste is rapidly formed into small unit blocks, then cooled and dried at room temperature. These smaller units are used to form the larger structures used for the installation, bound by another salt paste mixture. Once these final objects have dried, they are sanded into their final shapes. 
+The sculptural elements of the salt installation are built using basic non-iodized table salt and small amounts of soy wax. The salt is ground into a fine powder, and then heated with water and a small amount of soy wax, forming a paste. The paste is rapidly formed into small unit blocks, then cooled and dried at room temperature. These smaller units are used to form the larger structures used for the installation, bound by another salt paste mixture. Once these final objects have dried, they are sanded into their final shapes.
 
 ## Link to Prototype
 
