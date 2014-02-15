@@ -25,15 +25,15 @@ Please view our full project proposal at [Slideshare](http://www.slideshare.net/
 ### Sensing platform
 A single depth camera (Kinect, ASUS Xtion, or similar) continously scans the salt sculpture. Multiple web cameras distributed around the sculpture sense the presence and proximity of visitors.
 
-![Salt sensing](./project_images/salt_exp_01.png?raw=true)
+![Salt sensing](https://github.com/robotconscience/devart-template/raw/master/project_images/salt_exp_01.png?raw=true)
 
 ### Output
 Two concentric rings of [peristaltic pumps](http://www.adafruit.com/products/1150) sit above the sculpture. If visitors approach the scuplture, the pump nearest to them in the outer ring begins to emit water. As they get closer, the stream intensifies.
 
 Each pump on the inner ring is connected to a range of APIs, creating a semi-constant stream of varying intensity.
 
-![Output](./project_images/salt_exp_02.png?raw=true)
-![Output](./project_images/salt_exp_03.png?raw=true)
+![Output](https://github.com/robotconscience/devart-template/raw/master/project_images/salt_exp_02.png?raw=true)
+![Output](https://github.com/robotconscience/devart-template/raw/master/project_images/salt_exp_03.png?raw=true)
 
 ### Salt Sculptures
 The sculptural elements of the salt installation are built using basic non-iodized table salt and small amounts of soy wax. The salt is ground into a fine powder, and then heated with water and a small amount of soy wax, forming a paste. The paste is rapidly formed into small unit blocks, then cooled and dried at room temperature. These smaller units are used to form the larger structures used for the installation, bound by another salt paste mixture. Once these final objects have dried, they are sanded into their final shapes.
