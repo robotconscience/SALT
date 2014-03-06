@@ -22,13 +22,25 @@ ofPixels pixBack;
 
 //--------------------------------------------------------------
 void testApp::setup(){
+    
+#ifdef USE_OPENNI
     device = new ofxNI2::Device();
     bool bSetup = device->setup();
+    cout << device->isRegistrationSupported() << endl;
+#else
+    bool bSetup = kinect.init(false, true, true);
+    kinect.setRegistration(true);
+#endif
     if ( bSetup ){
-        cout << device->isRegistrationSupported() << endl;
+#ifdef USE_OPENNI
         bool bDepthSetup = depth.setup(*device);
+#else
+        bool bDepthSetup = true;
+        kinect.open();
+#endif
         if ( bDepthSetup ){
             
+#ifdef USE_OPENNI
             depth.setSize(width, height);
             depth.start();
             
@@ -37,6 +49,7 @@ void testApp::setup(){
             color.start();
             
             device->setEnableRegistration();
+#endif
             
             vbo.setMode(OF_PRIMITIVE_TRIANGLE_STRIP);
             
@@ -173,21 +186,41 @@ void testApp::setup(){
 
 //--------------------------------------------------------------
 void testApp::update(){
+#ifdef USE_OPENNI
     depth.updateTextureIfNeeded();
     color.updateTextureIfNeeded();
     ofxNI2::depthRemapToRange(depth.getPixelsRef(), remappedPix, near, far, true);
+#else
+    kinect.update();
+    if ( !kinect.isFrameNew() ) return;
+    kinect.setDepthClipping(near, far);
+    remappedPix = kinect.getDepthPixelsRef();
+#endif
     remappedImage.setFromPixels(remappedPix);
     
+    
+#ifdef USE_OPENNI
     // why are these pixels so volatile?
     if ( color.getWidth() == 0 && color.getPixelsRef().getWidth() == color.getWidth() ) return;
+#endif
     
     if ( bUseMeshColors ){
         
-        ofPixels pix = color.getPixelsRef();
+        ofPixels pix;
+        
+#ifdef USE_OPENNI
+        int width = color.getWidth();
+        int height = color.getHeight();
+        pix = color.getPixelsRef();
+#else
+        int width = kinect.getWidth();
+        int height = kinect.getHeight();
+        pix = kinect.getPixelsRef();
+#endif
         
         for(int i=0; i<vbo.getNumVertices(); i++) {
             ofVec3f mV = vbo.getVertex(i);
-            if ( mV.x < color.getWidth() && mV.y < color.getHeight() ){
+            if ( mV.x < width && mV.y < height ){
                 vbo.setColor(i, pix.getColor((int) mV.x, (int) mV.y) );
             }
         }
@@ -239,7 +272,9 @@ void testApp::update(){
 void testApp::draw(){
     //remappedImage.draw(0,480);
     
+#ifdef USE_OPENNI
     if ( color.getWidth() == 0 ) return;
+#endif
     
     ofEnableDepthTest();
     
