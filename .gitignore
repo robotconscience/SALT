@@ -9,3 +9,6 @@ xcuserdata
 *.xcuserdatad
 *.pbxuser
 *.mode1v3
+
+project_code/APIs/*/auth
+project_code/APIs/*/node_modules
