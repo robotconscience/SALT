@@ -14,7 +14,8 @@
             "openFrameworks",
             "openCv",
             "openNI",
-            "nodeJS"
+            "nodeJS",
+            "Spacebrew"
         ]
     },
     "themes": [
