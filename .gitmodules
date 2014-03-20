@@ -4,3 +4,12 @@
 [submodule "project_code/APIs/spacebrew-webservices"]
 	path = project_code/APIs/spacebrew-webservices
 	url = https://github.com/robotconscience/spacebrew-webservices.git
+[submodule "project_code/openFrameworks/addons/ofxSpacebrew"]
+	path = project_code/openFrameworks/addons/ofxSpacebrew
+	url = https://github.com/Spacebrew/ofxSpacebrew.git
+[submodule "project_code/openFrameworks/addons/ofxUI"]
+	path = project_code/openFrameworks/addons/ofxUI
+	url = https://github.com/rezaali/ofxUI.git
+[submodule "project_code/openFrameworks/addons/ofxCv"]
+	path = project_code/openFrameworks/addons/ofxCv
+	url = https://github.com/kylemcdonald/ofxCv.git
