@@ -1,0 +1,6 @@
+ofxOpenCv
+ofxCamaraLucida
+ofxCv
+ofxLibwebsockets
+ofxSpacebrew
+ofxUI
