@@ -22,6 +22,8 @@ var searchInputs = searchChoreo.newInputSet();
 // IF YOU NAMED YOURS SOMETHING ELSE, CHANGE THE NAME HERE!
 searchInputs.setCredential("googlesearch");
 
+var currentTerm = ";"
+
 /**
  * Calls G+ search via Temboo for a specified term
  * @param  {String} term what to search for!
@@ -32,6 +34,8 @@ searchInputs.setCredential("googlesearch");
 var searchGooglePlus = function ( term, resultHandler, errorHandler ){
 	searchInputs.set_Query(term);
 	searchInputs.set_MaxResults("20"); // 20 is the max!
+
+	currentTerm = term;
 
 	// Run the choreo, specifying success and error callback handlers
 	searchChoreo.execute(
@@ -63,7 +67,7 @@ var onSearchResults = function(results){
 			currentResults[resultObj.items[i].id] = resultObj.items[i];
 		}	
 	}
-	console.log(numNewResults);
+	console.log("New google+ posts for "+currentTerm+" : " +numNewResults);
 	sb.send("new_results", "range", numNewResults);
 }
 
@@ -90,7 +94,7 @@ var main = function() {
 	setInterval(
 		function(){
 			searchGooglePlus("water", onSearchResults, onSearchError);
-		}, 120000 );
+		}, 20000 );
 
 	searchGooglePlus("water", onSearchResults, onSearchError);
 }
