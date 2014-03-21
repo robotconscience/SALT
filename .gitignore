@@ -3,6 +3,8 @@
 DerivedData
 project_code/*/*/*/*/bin/data/openni
 project_code/*/*/bin/data/openni
+project_code/*/*/*/*/*/bin/data/openni
+project_code/*/*/*/bin/data/openni
 *.mov
 
 xcuserdata
