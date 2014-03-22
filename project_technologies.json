@@ -14,9 +14,10 @@
         "toolkits": [
             "openFrameworks",
             "openCv",
-            "openNI",
+            "libfreenect",
             "nodeJS",
-            "Spacebrew"
+            "Spacebrew",
+            "openTSPS"
         ]
     },
     "themes": [
