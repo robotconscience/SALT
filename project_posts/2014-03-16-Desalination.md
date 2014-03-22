@@ -9,18 +9,22 @@ Basically it's really difficult to filter water from salt because the two molecu
 
 ##Approaches
 1. Humidifier
-At first we thought we could use a simple humidifier. I found this great video explaining how they worked: [Supersonic Humidifier](https://www.youtube.com/watch?v=HlWkkujeBww). 
 
-It seemed perfect, basically a supersonic vaporization of water that would allow us to separate the water from the salt. Just kidding. Because it does not vaporize the water, it atomizes it. Which means that since its not being heated and turned into water vapor proper. It's just tiny droplets of water, not an actual gas. If it were that easy we would have solved the world's water desalination problems, I guess. In the end, we still may test it out to see if it at least decreases the salt content to a point that will not destroy the pump.
+ At first we thought we could use a simple humidifier. I found this great video explaining how they worked: [Supersonic Humidifier](https://www.youtube.com/watch?v=HlWkkujeBww). 
 
-![Humidifier Desalination Sketch](https://raw.github.com/robotconscience/devart-template/master/project_images/desalination_process/HumidifierDesalinationSketch.JPG) 
+ It seemed perfect, basically a supersonic vaporization of water that would allow us to separate the water from the salt. Just kidding. Because it does not vaporize the water, it atomizes it. Which means that since its not being heated and turned into water vapor proper. It's just tiny droplets of water, not an actual gas. If it were that easy we would have solved the world's water desalination problems, I guess. In the end, we still may test it out to see if it at least decreases the salt content to a point that will not destroy the pump.
+
+ ![Humidifier Desalination Sketch](https://raw.github.com/robotconscience/devart-template/master/project_images/desalination_process/HumidifierDesalinationSketch.JPG) 
 
 2. Evaporation
-For now we're back to the classic “save-yourself-on-a-desert-island” method. Heat the water under the hot Bermuda Triangle Sun, put a slanted surface above it thats a bit colder, it condenses, and drips down into a clean water tank.
+ 
+ For now we're back to the classic “save-yourself-on-a-desert-island” method. Heat the water under the hot Bermuda Triangle Sun, put a slanted surface above it thats a bit colder, it condenses, and drips down into a clean water tank.
 
-![Evaporation Desalination Sketch](https://raw.github.com/robotconscience/devart-template/master/project_images/desalination_process/EvaporationDesalinationSketch.JPG)  
+ ![Evaporation Desalination Sketch](https://raw.github.com/robotconscience/devart-template/master/project_images/desalination_process/EvaporationDesalinationSketch.JPG)  
 
-In a less than ironic way, this aspect of our project highlights some of our interests in the material aspect of our work, how water is this thing that seems so easy and present and willing to be manipulated but really its so delicate, and not simply replenishable or "filtered" into perfection. Well until Lockheed Martin came along that is.
+3. Conclusion
+
+ In a less than ironic way, this aspect of our project highlights some of our interests in the material aspect of our work, how water is this thing that seems so easy and present and willing to be manipulated but really its so delicate, and not simply replenishable or "filtered" into perfection. Well until Lockheed Martin came along that is.
 
 ##Salt objects
 
