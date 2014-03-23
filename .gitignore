@@ -14,3 +14,4 @@ xcuserdata
 
 project_code/APIs/*/auth
 project_code/APIs/*/node_modules
+project_code/APIs/*/results.json
