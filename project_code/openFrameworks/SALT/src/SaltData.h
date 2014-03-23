@@ -37,10 +37,18 @@ public:
         arduino = &ard;
         
         // for now, let's set up the APIs in here?
+        
+        // Google Plus
         SaltActivity gplus;
         gplus.min = 0; gplus.max = 12;
         APIlevels.push_back( gplus );
         
+        // YouTube
+        SaltActivity youtube;
+        youtube.min = 0; youtube.max = 50;
+        APIlevels.push_back( youtube );
+        
+        // Locals!
         SaltActivity peopleInSpace;
         peopleInSpace.max = 2; // right now, it's just shobun and i in here!
         localLevels.push_back(peopleInSpace);
