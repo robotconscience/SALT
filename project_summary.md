@@ -37,9 +37,17 @@ Each pump on the inner ring is connected to a range of APIs, creating a semi-con
 ### Salt Sculptures
 The sculptural elements of the salt installation are built using basic non-iodized table salt and small amounts of soy wax. The salt is ground into a fine powder, and then heated with water and a small amount of soy wax, forming a paste. The paste is rapidly formed into small unit blocks, then cooled and dried at room temperature. These smaller units are used to form the larger structures used for the installation, bound by another salt paste mixture. Once these final objects have dried, they are sanded into their final shapes.
 
+![Sculpture](https://raw.githubusercontent.com/robotconscience/devart-template/master/project_images/saltobjects_1and2.jpg)
+
+### Software + Hardware Breakdown
+
+![Software Architecture](https://raw.githubusercontent.com/robotconscience/devart-template/master/project_images/diagrams/software_architecture.jpg)
+
+![Hardware](https://raw.githubusercontent.com/robotconscience/devart-template/master/project_images/diagrams/hardware_architecture.jpg)
+
 ## Prototypes
 
-[Video: Beta Prototype](https://vimeo.com/89812496)
+[Video: Beta Prototype](http://www.youtube.com/embed/snoP6r6tQIM)
 
 ### Process Prototypes
 
@@ -76,5 +84,17 @@ All example code is included in our project posts. Some important ones:
 ## Images & Videos
 
 ![SALT](http://farm4.staticflickr.com/3703/9571458893_666d613ec1_b.jpg "Salt Image 1")
+SALT Prototype 1: Aftermath
 
-https://vimeo.com/78356704
+![Projection](https://raw.githubusercontent.com/robotconscience/devart-template/master/project_images/prototype_2/Prototype2_projection.jpg)
+SALT Prototype 2: Projection
+
+![Calibration](https://raw.githubusercontent.com/robotconscience/devart-template/master/project_images/prototype_2/Prototype2_8.JPG)
+SALT Prototype 2: Calibration
+
+![Rig](https://raw.githubusercontent.com/robotconscience/devart-template/master/project_images/prototype_2/Prototype2_11.JPG)
+SALT Prototype 2: Process Rigging
+
+![Pumps](https://raw.githubusercontent.com/robotconscience/devart-template/master/project_images/prototype_2/Prototype2_7.JPG)
+SALT Prototype 2: Peristaltic Pumps + Arduino
+
