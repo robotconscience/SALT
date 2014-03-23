@@ -1,5 +1,4 @@
 # SALT
-(tentative Title)
 
 ## Authors
 - [Brett Renfer](http://www.robotconscience.com): @robotconscience
@@ -28,7 +27,7 @@ A single depth camera (Kinect, ASUS Xtion, or similar) continously scans the sal
 ![Salt sensing](https://github.com/robotconscience/devart-template/raw/master/project_images/salt_exp_01.png?raw=true)
 
 ### Output
-Two concentric rings of [peristaltic pumps](http://www.adafruit.com/products/1150) sit above the sculpture. If visitors approach the scuplture, the pump nearest to them in the outer ring begins to emit water. As they get closer, the stream intensifies.
+Two concentric rings of [peristaltic pumps](http://www.adafruit.com/products/1150) sit above the sculpture. As visitors approach the scuplture, the pump nearest to them in the outer ring begins to emit water. As they get closer, the stream intensifies.
 
 Each pump on the inner ring is connected to a range of APIs, creating a semi-constant stream of varying intensity.
 
@@ -38,22 +37,41 @@ Each pump on the inner ring is connected to a range of APIs, creating a semi-con
 ### Salt Sculptures
 The sculptural elements of the salt installation are built using basic non-iodized table salt and small amounts of soy wax. The salt is ground into a fine powder, and then heated with water and a small amount of soy wax, forming a paste. The paste is rapidly formed into small unit blocks, then cooled and dried at room temperature. These smaller units are used to form the larger structures used for the installation, bound by another salt paste mixture. Once these final objects have dried, they are sanded into their final shapes.
 
-## Link to Prototype
+## Prototypes
 
-[System Prototype 1](https://vimeo.com/78356704)
+[Video: Beta Prototype](https://vimeo.com/89812496)
+
+### Process Prototypes
+
+[Video: Alpha Prototype](https://vimeo.com/78356704)
+[Video: Depth color prototype](https://vimeo.com/87061029)
 
 ## Example Code
-Coming soon!
+All example code is included in our project posts. Some important ones:
+* [Calibrating a Kinect and projector with ofxCamaraLucida and RGBDemo](https://github.com/robotconscience/devart-template/blob/master/project_posts/2014-03-06-Calibration.md)
+* [Connecting APIs to Spacebrew with Temboo](https://github.com/robotconscience/devart-template/blob/master/project_posts/2014-03-14-APIs.md)
+* [Setting up Spacebrew with Google Compute Engine](https://github.com/robotconscience/devart-template/blob/master/project_posts/2014-03-21-Cloud.md)
 
 ## Links to External Libraries
 
-* [openFrameworks](https://github.com/openframeworks/openFrameworks "openFrameworks")
-* [ofxCv](https://github.com/kylemcdonald/ofxCv "ofxCv")
-* [ofxNI2](https://github.com/satoruhiga/ofxNI2 "ofxNI2")
-* [ofxCamaraLucida](https://github.com/chparsons/ofxCamaraLucida)
-* Prototypes will most likely use [KinectProjectorToolkit](https://github.com/genekogan/KinectProjectorToolkit)
-* [RGBDemo](https://github.com/rgbdemo/rgbdemo)
+### Core Frameworks
+* [openFrameworks](https://github.com/openframeworks/openFrameworks "openFrameworks") 
+* [Arduino](http://arduino.cc)
+* [Spacebrew](http://docs.spacebrew.cc)
+  * [spacebrew server](https://github.com/spacebrew/spacebrew) 
+  * [ofxSpacebrew](https://github.com/spacebrew/ofxSpacebrew)
+  * [ofxLibwebsockets](https://github.com/labatrockwell/ofxLibwebsockets)
+  * [spacebrew.js](https://github.com/spacebrew/spacebrew.js)
+* [TSPS](http://openTSPS.com)
+* [Temboo](http://www.temboo.com)
 
+### Libraries: Calibration and Sensing
+* [ofxCamaraLucida](https://github.com/chparsons/ofxCamaraLucida)
+* [RGBDemo](https://github.com/rgbdemo/rgbdemo)
+* [ofxCv](https://github.com/kylemcdonald/ofxCv "ofxCv")
+
+### Libraries: Utilities
+* [ofxUI](https://github.com/rezaali/ofxUI/)
 
 ## Images & Videos
 
