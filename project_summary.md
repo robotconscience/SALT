@@ -47,7 +47,7 @@ The sculptural elements of the salt installation are built using basic non-iodiz
 
 ## Prototypes
 
-[Video: Beta Prototype](https://vimeo.com/89812496)
+[Video: Beta Prototype](http://www.youtube.com/watch?v=snoP6r6tQIM)
 
 ### Process Prototypes
 
@@ -84,12 +84,17 @@ All example code is included in our project posts. Some important ones:
 ## Images & Videos
 
 ![SALT](http://farm4.staticflickr.com/3703/9571458893_666d613ec1_b.jpg "Salt Image 1")
+SALT Prototype 1: Aftermath
+
+![Projection](https://raw.githubusercontent.com/robotconscience/devart-template/master/project_images/prototype_2/Prototype2_projection.jpg)
+SALT Prototype 2: Projection
 
 ![Calibration](https://raw.githubusercontent.com/robotconscience/devart-template/master/project_images/prototype_2/Prototype2_8.JPG)
-
-![Projection](https://raw.githubusercontent.com/robotconscience/devart-template/master/project_images/prototype_2/Prototype2_projection)
+SALT Prototype 2: Calibration
 
 ![Rig](https://raw.githubusercontent.com/robotconscience/devart-template/master/project_images/prototype_2/Prototype2_11.JPG)
+SALT Prototype 2: Process Rigging
 
 ![Pumps](https://raw.githubusercontent.com/robotconscience/devart-template/master/project_images/prototype_2/Prototype2_7.JPG)
+SALT Prototype 2: Peristaltic Pumps + Arduino
 
