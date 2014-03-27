@@ -43,9 +43,9 @@ Once we had the calibration worked out and the projection mapped onto our salt o
 
 ## Color
 
-![Projection](https://raw.github.com/robotconscience/devart-template/master/project_images/prototype_2/ Prototype2_projection.jpg)
+![Projection](https://raw.github.com/robotconscience/devart-template/master/project_images/prototype_2/Prototype2_projection.jpg)
 
-![Projection](https://raw.github.com/robotconscience/devart-template/master/project_images/prototype_2/ Prototype2_projection.gif)
+![Projection](https://raw.github.com/robotconscience/devart-template/master/project_images/prototype_2/Prototype2_projection.gif)
 
 We worked on a number of systems for the color, and settled on what you see above (systemically, not the colors themselves). We’re affectionately calling it the “gobstopper” system: it’s a series of colors arranged in concentric spheres. Colors are revealed abruptly as the salt dissolves, making clear the changes across its surface.
 

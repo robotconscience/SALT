@@ -10,7 +10,7 @@ Basically it's really difficult to filter water from salt because the two molecu
 ##Approaches
 1. Humidifier
 
- At first we thought we could use a simple humidifier. I found this great video explaining how they worked: [Supersonic Humidifier](https://www.youtube.com/watch?v=HlWkkujeBww). 
+ At first we thought we could use a simple humidifier. I found this great video explaining how they worked: [Supersonic Humidifier](https://www.youtube.com/embed/HlWkkujeBww). 
 
  It seemed perfect, basically a supersonic vaporization of water that would allow us to separate the water from the salt. Just kidding. Because it does not vaporize the water, it atomizes it. Which means that since its not being heated and turned into water vapor proper. It's just tiny droplets of water, not an actual gas. If it were that easy we would have solved the world's water desalination problems, I guess. In the end, we still may test it out to see if it at least decreases the salt content to a point that will not destroy the pump.
 

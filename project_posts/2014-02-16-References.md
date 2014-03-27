@@ -1,4 +1,4 @@
-#Context & References
+#Context and References
 
 
 Brett and I have been looking at and discussing a lot of 20th century art while working on our installation. Gustav Metzger's Auto-Destructive a starting point of conversation for us conceptually. Looking to his various Manifestos, there are certainly differences in what we're interested in. Where Metzger was concerned about war and industrialization as active acts of destruction, places you can point to, we're more interested in the latent acts of energy consumption and human habits that are rapidly altering future possibilites within our ecological place. Anyway, here's Metzger:
