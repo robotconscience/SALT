@@ -77,8 +77,8 @@ var onSearchError = function (error){
 }
 
 /** */
-var main = function() {
-	sb = new Spacebrew.Client("spacebrew.robotconscience.com", "gplus_searcher", "");
+var main = function( host ) {
+	sb = new Spacebrew.Client(host, "gplus_searcher", "");
 	sb.addPublish("results", "string", "" );
 	sb.addPublish("new_results", "range", "" );
 	sb.addSubscribe("search", "string");

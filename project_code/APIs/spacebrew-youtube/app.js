@@ -108,7 +108,7 @@ var main = function( host ) {
 	setInterval(
 		function(){
 			searchYouTube("water", onSearchResults, onSearchError);
-		}, 2 * 60 * 1000 );
+		}, 20000);//2 * 60 * 1000 );
 
 	searchYouTube("water", onSearchResults, onSearchError);
 }
