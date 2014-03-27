@@ -8,8 +8,8 @@
   <mesh_step>1</mesh_step>
 
   <texture>
-    <width>800</width>
-    <height>600</height>
+    <width>1920</width>
+    <height>1080</height>
     <num_samples>1</num_samples>
   </texture>
 

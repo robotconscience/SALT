@@ -1110,9 +1110,9 @@
 			children = (
 				A2EED49CAF1ECF90F735FFD3 /* cmlCalibration.cpp */,
 				C974D63B4108FF0167D79B8D /* cmlCalibration.h */,
-				89F2F10C705FB95ED18CF6C5 /* cmlCamaraLucida.cpp */,
 				2158F6339BC4256A4DEA340A /* cmlCamaraLucida.h */,
 				79426C0FD08BFD30E356C15A /* cmlConfig.h */,
+				89F2F10C705FB95ED18CF6C5 /* cmlCamaraLucida.cpp */,
 				676143CA96C379FD64F1DAFF /* cmlDepthCamera.cpp */,
 				413B890E59D648C8C8E33555 /* cmlDepthCamera.h */,
 				BD871E60C567D32042A6B7FC /* cmlEvents.h */,

@@ -1,27 +1,27 @@
 <Widget>
     <Kind>4</Kind>
     <Name>Near</Name>
-    <Value>586.734741211</Value>
+    <Value>76.530616760</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>Far</Name>
-    <Value>1607.142822266</Value>
+    <Value>2831.632812500</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>Center.x</Name>
-    <Value>378.061218262</Value>
+    <Value>270.000000000</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>Center.y</Name>
-    <Value>218.367340088</Value>
+    <Value>284.081634521</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>Center.z</Name>
-    <Value>0.500000000</Value>
+    <Value>229.591842651</Value>
 </Widget>
 <Widget>
     <Kind>2</Kind>
@@ -39,57 +39,37 @@
     <Value>0</Value>
 </Widget>
 <Widget>
-    <Kind>4</Kind>
-    <Name>rotate x</Name>
-    <Value>277.346923828</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>rotate y</Name>
-    <Value>5.510204315</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>rotate z</Name>
-    <Value>267.244903564</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>trans x</Name>
-    <Value>-0.066326559</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>trans y</Name>
-    <Value>-0.127551019</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>trans z</Name>
-    <Value>-0.005102038</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>scale</Name>
-    <Value>1.214285731</Value>
-</Widget>
-<Widget>
-    <Kind>4</Kind>
-    <Name>origin</Name>
-    <Value>0.500000000</Value>
+    <Kind>2</Kind>
+    <Name>Smooth mesh?</Name>
+    <Value>0</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>shaderMin</Name>
-    <Value>893.367309570</Value>
+    <Value>214.285720825</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>shaderMax</Name>
-    <Value>938.265319824</Value>
+    <Value>225.510208130</Value>
 </Widget>
 <Widget>
     <Kind>2</Kind>
     <Name>useData</Name>
-    <Value>1</Value>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>42</Kind>
+    <Name>servoDebug</Name>
+    <Value>90</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>bServoAuto</Name>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>servo position</Name>
+    <Value>-30.593334198</Value>
 </Widget>

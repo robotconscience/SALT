@@ -56,7 +56,7 @@ public:
         // how many pumps are we controlling?
         map<int, vector<PumpPins> >::iterator it = pumpData.begin();
         for (it; it != pumpData.end(); ++it ){
-            cout << it->first << endl;
+//            cout << it->first << endl;
             switch ( it->first ){
                 case 0:
                     pumps_api.insert( pumps_api.begin(), it->second.begin(), it->second.end());
@@ -87,7 +87,7 @@ public:
         cout << "api " << APIAverage << endl;
         int apiValue = ofMap(APIAverage, 0, 1.0, 100, 255 );
         
-        cout << apiValue << endl;
+//        cout << apiValue << endl;
         
         // get average of local input
         float localAverage = 0;
@@ -99,11 +99,12 @@ public:
         cout << "local " << localAverage << endl;
         int localValue = ofMap(localAverage, 0, 1.0, 100, 255 );
         
-        cout << localValue << endl;
+//        cout << localValue << endl;
         
         
         // pumps freak out at 0-100!
-        if ( apiValue == 100 ) apiValue = 0;
+        if ( apiValue <= 100 ) apiValue = 0;
+        if ( localValue <= 100 ) localValue = 0;
         if ( bWriteToPumps ){
             for ( int i=0; i<pumps_api.size(); i++){
                 arduino->sendPwm(pumps_api[i].enablePin, apiValue);

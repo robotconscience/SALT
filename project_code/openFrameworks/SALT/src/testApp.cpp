@@ -6,13 +6,14 @@ float far = 4000;
 bool bUseCL = true;
 
 // arduino setup
-string arduinoName = "/dev/tty.usbmodem1451";
+string arduinoName = "/dev/tty.usbmodem14511";
 int engagePin1 = 11;
 int engagePin2 = 5;
 int hIn1       = 10;
 int hIn2       = 9;
 int hIn3       = 4;
 int hIn4       = 3;
+int servoPin   = 6;
 
 
 // debugging with gui!
@@ -31,7 +32,21 @@ float origin      = .5;
 float shaderMin   = 0.0;
 float shaderMax   = 1000.0;
 
+bool  bSmoothMesh = false;
 bool  bUseData    = false;
+int   servoDebug  = 90;
+bool  bServoAuto  = false;
+bool  bLastServoAuto  = false;
+
+// servo stuff for now
+int   servoCalls    = 0;
+int   lastServoRan  = 0;
+int   servoMaxMillsF = 7500;
+int   servoMaxMillsB = 6800;
+int   servoCurrMax  = 7500;
+int   servoSpeed    = 15;
+int   servoDir      = 1;
+float servoPos      = 0.0;
 
 // spacebrew settings
 string host = "spacebrew.robotconscience.com";
@@ -40,7 +55,8 @@ string name = "salt";
 //--------------------------------------------------------------
 void testApp::setup()
 {
-    ofSetWindowPosition(0,0);
+    ofSetWindowPosition( ofGetWindowPositionX() == 0 ? 1920 : 0, 0 );
+    ofToggleFullscreen();
     ofSetFrameRate(60);
     ofBackground(50);
     
@@ -78,17 +94,21 @@ void testApp::setup()
     gui->addIntSlider("Pump 1 Value", 0, 255, &pumpOneVal);
     gui->addIntSlider("Pump 2 Value", 0, 255, &pumpTwoVal);
     gui->addSpacer();
-    gui->addSlider("rotate x", 0, 360.0, &rotateX);
-    gui->addSlider("rotate y", 0, 360.0, &rotateY);
-    gui->addSlider("rotate z", 0, 360.0, &rotateZ);
-    gui->addSlider("trans x", -1.0, 1.0, &translateX);
-    gui->addSlider("trans y", -1.0, 1.0, &translateY);
-    gui->addSlider("trans z", -1.0, 1.0, &translateZ);
-    gui->addSlider("scale", 0.0, 2.0, &scale);
-    gui->addSlider("origin", -1.0, 1.0, &origin);
+//    gui->addSlider("rotate x", 0, 360.0, &rotateX);
+//    gui->addSlider("rotate y", 0, 360.0, &rotateY);
+//    gui->addSlider("rotate z", 0, 360.0, &rotateZ);
+//    gui->addSlider("trans x", -1.0, 1.0, &translateX);
+//    gui->addSlider("trans y", -1.0, 1.0, &translateY);
+//    gui->addSlider("trans z", -1.0, 1.0, &translateZ);
+//    gui->addSlider("scale", 0.0, 2.0, &scale);
+//    gui->addSlider("origin", -1.0, 1.0, &origin);
+    gui->addToggle("Smooth mesh?", &bSmoothMesh);
     gui->addSlider("shaderMin", -100.0, 1000.0, &shaderMin);
     gui->addSlider("shaderMax", -100.0, 1000.0, &shaderMax);
     gui->addToggle("useData", &bUseData);
+    gui->addIntSlider("servoDebug", 0, 180, &servoDebug);
+    gui->addToggle("bServoAuto", &bServoAuto);
+    gui->addSlider("servo position", -1, 1, &servoPos);
     gui->loadSettings("settings/gui.xml");
     
     // COLOR SETUP: setup gobstopper render
@@ -129,7 +149,8 @@ void testApp::setup()
         hIn3        = arduinoSettings.getValue("hIn3", hIn3);
         hIn4        = arduinoSettings.getValue("hIn4", hIn4);
     } else {
-        // need to save settingsarduinoSettings.getValue("name", arduinoName);
+        // need to save settings
+        arduinoSettings.setValue("name", arduinoName);
         arduinoSettings.setValue("engagePin1", engagePin1);
         arduinoSettings.setValue("engagePin2", engagePin2);
         arduinoSettings.setValue("hIn1", hIn1);
@@ -155,19 +176,20 @@ void testApp::setup()
     pumpOne.dataPin1 = hIn1;
     pumpOne.dataPin2 = hIn2;
     
-    pumps[1].push_back(pumpOne);
+    pumps[0].push_back(pumpOne);
     
     PumpPins pumpTwo;
     pumpTwo.enablePin = engagePin2;
     pumpTwo.dataPin1 = hIn3;
     pumpTwo.dataPin2 = hIn4;
     
-    pumps[0].push_back(pumpTwo);
+    pumps[1].push_back(pumpTwo);
     
     saltData.setup(arduino, pumps);
     
     // SETUP SPACEBREW + CONNECT TO PUMP DATA
     spacebrew.addSubscribe("gplus_api", &saltData.APIlevels[0].value );
+    spacebrew.addSubscribe("yt_api", &saltData.APIlevels[1].value );
     spacebrew.addSubscribe("numPeople", &saltData.localLevels[0].value );
     spacebrew.connect(host, name);
 }
@@ -188,6 +210,51 @@ void testApp::update()
         arduino.sendDigital(hIn4, ARD_LOW);
     }
     
+    static bool bStarted = false;
+    
+    if ( bSetupArduino ){
+        
+        // servo stuff
+        
+        // are there people? start the servo!
+        if ( bUseData ){
+            cout << saltData.localLevels[0].value << endl;
+            if ( saltData.localLevels[0].value > .4 ){
+                bServoAuto = true;
+            } else {
+                bServoAuto = false;
+            }
+        }
+        
+        arduino.sendServo(servoPin, servoDebug);
+        //servoDebug = ofMap(sin(ofGetElapsedTimeMillis() * .001), -1, 1.0, 180, 0);
+        
+        if ( bServoAuto ){
+            if ( !bStarted || (bServoAuto && !bLastServoAuto)){
+                bStarted = true;
+                servoCalls = ofGetElapsedTimeMillis() + lastServoRan;
+                servoCurrMax = servoMaxMillsF / 2.0;
+                servoDir = 1;
+            }
+            if ( ofGetElapsedTimeMillis() - servoCalls < servoCurrMax ){
+                servoDebug = servoDir == 1 ? 107 : 80;
+            } else {
+                servoDir *= -1;
+                servoCalls = ofGetElapsedTimeMillis();
+                servoCurrMax = servoDir == 1 ? servoMaxMillsF : servoMaxMillsB;
+            }
+        }
+        servoPos = servoCurrMax != servoMaxMillsF / 2.0
+                            ? ofMap((ofGetElapsedTimeMillis() - servoCalls), 0, servoDir == 1 ? servoMaxMillsF : servoMaxMillsB, servoDir, servoDir * -1)
+                            : ofMap((ofGetElapsedTimeMillis() - servoCalls), 0, servoMaxMillsF / 2.0, 0, 1);
+        
+        if ( bLastServoAuto && !bServoAuto ){
+            lastServoRan = ofGetElapsedTimeMillis() - servoCalls;
+            servoDebug = 90;
+        }
+        bLastServoAuto = bServoAuto;
+    }
+    
     saltData.bWriteToPumps = bUseData;
     
     // update kinect!
@@ -202,7 +269,7 @@ void testApp::update()
     kinect.update();
     
     if ( kinect.isFrameNew() ){
-        cml->update( kinect.getRawDepthPixels() );
+        cml->update( kinect.getRawDepthPixels(), bSmoothMesh );
         for (int x=0; x<colorMesh.getNumVertices(); x++){
             ofVec3f v = colorMesh.getVertex(x);
             float zmts = kinect.getDistanceAt(v.x, v.y);// * 0.001;
@@ -288,13 +355,14 @@ void testApp::render_texture(ofEventArgs &args)
 void testApp::render_3d(ofEventArgs &args)
 {
     
-    ofTranslate(translateX * (cml->gpu() ? 10.0 : 1.0), translateY * (cml->gpu() ? 10.0 : 1.0),translateZ * (cml->gpu() ? 10.0 : 1.0));
+    /*ofTranslate(translateX * (cml->gpu() ? 10.0 : 1.0), translateY * (cml->gpu() ? 10.0 : 1.0),translateZ * (cml->gpu() ? 10.0 : 1.0));
     ofTranslate(0, 0, origin * (cml->gpu() ? 10.0 : 1.0));
     ofRotateX(rotateX);
     ofRotateY(rotateY);
     ofRotateZ(rotateZ);
     ofScale(scale, scale, scale);
     ofTranslate(0, 0, -origin);
+     */
 }
 
 //--------------------------------------------------------------
@@ -348,7 +416,7 @@ void testApp::keyPressed(int key){
             break;
             
         case 'p':
-            ofSetWindowPosition( ofGetWindowPositionX() == 0 ? 1440 : 0, 0 );
+            ofSetWindowPosition( ofGetWindowPositionX() == 0 ? 1920 : 0, 0 );
             break;
             
         case 'g':
@@ -386,6 +454,10 @@ void testApp::setupArduino(const int & version){
 	arduino.sendDigitalPinMode(hIn2, ARD_OUTPUT);
 	arduino.sendDigitalPinMode(hIn3, ARD_OUTPUT);
 	arduino.sendDigitalPinMode(hIn4, ARD_OUTPUT);
+    
+    arduino.sendServoAttach(servoPin, 1000, 2000 );
+    
+    servoCalls = ofGetElapsedTimeMillis();
     
     // it is now safe to send commands to the Arduino
     bSetupArduino = true;
