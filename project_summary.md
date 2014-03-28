@@ -3,6 +3,7 @@
 ## Authors
 - [Brett Renfer](http://www.robotconscience.com): @robotconscience
 - [Shobun Baile](http://shobunbaile.com/)
+- (More on us below!)
 
 ## Description
 ### Overview
@@ -81,7 +82,29 @@ All example code is included in our project posts. Some important ones:
 ### Libraries: Utilities
 * [ofxUI](https://github.com/rezaali/ofxUI/)
 
+## About Us
+
+Brett Renfer is an experience designer and maker. He has created architectural-scale interactive installations for ZER01, Intel, Google, JetBlue, the Cosmopolitan of Las Vegas, the Whitney Museum of Art, and the National Building Museum. He also develops and supports open source projects that lower the barrier of entry to interaction design, including [TSPS](http://github.com/labatrockwell/opentsps) and [Spacebrew](http://www.spacebrew.cc). Brett is director of experience design and Collins and adjunct faculty at the New School and New York University.
+* http://www.robotconscience.com
+
+Shobun Baile is a film/video artist  with a background in non-organic chemistry. His work deals with ecology, gender and sexual identity, and personal histories. He is the assistant editor of Framework Cinema & Media Journal, and a researcher in neuropathology at Columbia University.
+* http://shobunbaile.com
+
+Brett and Shobun have been working together since 2013. Salt is their first formal collaboration, and is first in a series of experiences centered around interaction, the environment, and ephermerality.
+
 ## Images & Videos
+
+![Projection](https://raw.githubusercontent.com/robotconscience/devart-template/master/project_images/Prototype2_5/prototype_humanscale.jpg)
+
+SALT Prototype 2.5
+
+![Projection](https://raw.githubusercontent.com/robotconscience/devart-template/master/project_images/Prototype2_5/prototype_rig.jpg)
+
+SALT Prototype 2.5: Tracking and output rig
+
+![Projection](https://raw.githubusercontent.com/robotconscience/devart-template/master/project_images/prototype_2/prototype_calibrated_4.jpg)
+
+SALT Prototype 2.5: Calibrated projection
 
 ![SALT](http://farm4.staticflickr.com/3703/9571458893_666d613ec1_b.jpg "Salt Image 1")
 SALT Prototype 1: Aftermath
