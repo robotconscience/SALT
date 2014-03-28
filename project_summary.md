@@ -48,10 +48,11 @@ The sculptural elements of the salt installation are built using basic non-iodiz
 
 ## Prototypes
 
-[Video: Beta Prototype](https://www.youtube.com/watch?v=Uznlm7nx28U)
+[Video: Version 2.5 Prototype](https://www.youtube.com/watch?v=MxeFtY5l_Lo)
 
 ### Process Prototypes
 
+[Video: Beta Prototype](https://www.youtube.com/watch?v=Uznlm7nx28U)
 [Video: Alpha Prototype](https://vimeo.com/78356704)
 [Video: Depth color prototype](https://vimeo.com/87061029)
 
