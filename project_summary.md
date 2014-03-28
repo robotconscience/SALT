@@ -102,6 +102,10 @@ SALT Prototype 2.5
 
 SALT Prototype 2.5: Tracking and output rig
 
+![Projection](https://raw.githubusercontent.com/robotconscience/devart-template/master/project_images/prototype_2/prototype_calibrated_4.jpg)
+
+SALT Prototype 2.5: Calibrated projection
+
 ![SALT](http://farm4.staticflickr.com/3703/9571458893_666d613ec1_b.jpg "Salt Image 1")
 SALT Prototype 1: Aftermath
 
